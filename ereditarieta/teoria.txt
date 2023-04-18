@@ -1,0 +1,25 @@
+COSE DA SAPERE:
+
+Sintassi:
+
+- Cane extends Animale
+- per chiamare il costruttore padre faccio super(...) dentro il costruttore figlio
+- per usare un metodo della classe padre uso super.metodo(...) SOLO se ho definito lo stesso
+metodo sia per la classe padre che la figlia
+
+
+Funzionamento:
+
+- I campi della classe padre sono anche campi della classe figlia. Se voglio far modificare
+i campi anche dalla classe figlia allora devo metterli protected.
+- Un metodo che ha come parametro un oggetto di tipo Classe1 in realta'
+puo' ricevere sia oggetti di Classe1 sia oggetti di classi FIGLIE di Classe1.
+Quindi dal punto di vista di chi scrive il metodo, non ha molta importanza. Dal punto
+di vista di chi CHIAMA il metodo (es. main, altre classi) questo HA MOLTA IMPORTANZA,
+perche' posso passare oggetti "specializzati" (es. passo un Auto dove mi si chiede
+un veicolo)
+- Tutto questo e' importante perche' posso scrivere un UNICO metodo per la classe padre
+invece che 10 metodi specifici per ogni classe figlia -> risparmio un sacco di codice
+- Quando ho un oggetto di tipo Classe1 (ad esempio fra gli input di un metodo) entità
+invoco dei metodi su questo oggetto, se questo oggetto e' in realta' una sottoclasse
+allora i metodi della sottoclasse saranno quelli chiamati.

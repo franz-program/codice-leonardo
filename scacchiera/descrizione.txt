@@ -1,0 +1,12 @@
+ALBERO GERARCHICO SULLA SCACCHIERA
+Nel gioco degli scacchi sono presenti sulla scacchiera 16 pezzi che 
+hanno caratteristiche differenti.
+Realizza la gerarchia delle classi che permette 
+di descrive le singole mosse effettuate e/o effettuabili
+durante una partita tra due giocatori.
+
+
+
+DA FARE:
+
+- definisci le classi Regina, Re, cavallo, torre, pedone, alfiere

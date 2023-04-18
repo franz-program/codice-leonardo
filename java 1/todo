@@ -1,0 +1,19 @@
+1) fare una funzione che conta quante sono le pietanze di un tipo oppure 
+di un altro tipo, dati in input
+int contaTipi(String tipo1, String tipo2){
+
+}
+
+2) fare una funzione che conta quanti sono i PRIMI con un costo maggiore
+di un numero dato in input
+int contaPrimiCostosi(int prezzo){
+
+}
+
+3) fare una funzione che conta quanti sono le pietanze di un tipo dato in input,
+con prezzo uguale a dato in input
+int contaPietanzeCostose(int prezzo, String tipo){
+
+}
+
+4) fare una funzione che restituisca un array del
