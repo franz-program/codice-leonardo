@@ -1,0 +1,22 @@
+CLASSI ASTRATTE:
+
+Cosa sono?
+Sono classi in cui ci sono dei metodi con solo la "signature" (nome + tipo di return + parametri di input)
+ma senza alcuna riga di codice all'interno. Questi metodi si dicono astratti. Una classe astratta 
+e' una classe che ha almeno un metodo astratto. 
+
+Perche'?
+Sono utili per scrivere un codice "fatto bene": fondamentalmente un codice che non deve cambiare
+molto spesso (senza grossi errori). In pratica servono a spostare il focus del programma dallo scrivere il codice al far il design del codice.
+
+Come?
+Il fatto che posso scrivere un metodo senza scrivere il codice al suo interno mi sposta
+lo sforzo mentale da "come scrivo questo metodo?" a "come collego queste classi?"
+
+
+PRATICAMENTE:
+
+1. dichiaro classe padre astratta, cioe' ha almeno un metodo astratto
+2. dichiaro una classe figlia che estende la classe astratta
+3. la classe figlia deve fare l'override (riscrivere) di tutti i metodi astratti della classe padre
+(quindi deve avere il "corpo" del metodo)

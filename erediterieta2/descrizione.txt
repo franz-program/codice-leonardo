@@ -1,0 +1,27 @@
+BATTAGLIA OCEANICA
+
+La classe NaveMare è definita mediante una Coppia di coordinate e altri campi.
+L'oggetto Coppia identifica solo la casella iniziale; nulla è saputo sulla posizione degli altri pezzi della nave. Si
+ricorda che in una classe astratta deve essere “messo” tutto ciò che è possibile.
+Devono essere previsti i metodi:
+ costruttore: ha come parametri una Coppia di coordinate e il numero di pezzi galleggianti;
+ stato(), che ritorna lo stato della nave: illesa, non integra, distrutta;
+ affondata(), che indica se la nave è affondata.
+La classe NaveLineare è una NaveMare che possiede una direzione (Nord o Est) rispetto alla casella
+iniziale; i pezzi galleggianti sono contigui e sulla stessa direzione. Devono essere previsti i metodi:
+ costruttore: ha come parametri una Coppia di coordinate, il numero di pezzi galleggianti e la direzione;
+
+La classe Portaerei, rispetto alla NaveLineare, possiede anche una torretta composta da una casella
+posizionata rispetto alla casella iniziale della nave:
+ a nord se la nave è in direzione est;
+ a est se la nave è in direzione nord.
+La classe NaveQuadrata è una NaveMare composta da n pezzi galleggianti disposti a matrice quadrata
+avente la Coppia di origine a SudOvest (n è un quadrato perfetto). Devono essere previsti i metodi:
+ fuoco(?), che date le coordinate del colpo, restituisce un esito: acqua, colpito, affondato;
+La classe Sottomarino è una NaveLineare che ha anche uno stato di emersione o di immersione. Durante
+l'immersione del sottomarino, il colpo (sulle sue coordinate) non sortisce effetti. Devono essere previsti i metodi:
+ fuoco(?), che date le coordinate del colpo, restituisce un esito: acqua, colpito, affondato;
+ emersione(), che fa emergere il sottomarino;
+ immersione(), che fa immergere il sottomarino.
+La classe Coppia è una coppia di coordinate.
+Per ogni classe X, deve essere costruita una classe di collaudo XTest contenente solo il main().
