@@ -6,7 +6,7 @@
  * Avrai sicuramente capito che nel testare un oggetto appartenente alla classe restaurant.Tavolo dovrai necessariamente inserire nell'ordine n pietanze e, per ogni
  * pietanza, dovrai inserire la tipologia (PRIMO, SECONDO, DESSERT, ecc.) il nome della pietanza e il relativo prezzo. Lavoro alquanto noioso e dispendioso (in temini di tempo)
  * 
- * Al fine di "semplificarti la vita", ti vengono messi a disposizione 2 array (paralleli) ovvero hanno la stessa lunghezza e puoi accedere al loro contenuto utilizzando lo stesso indice, 
+ * Al fine di "semplificarti la vita", ti vengono messi a disposizioneNave 2 array (paralleli) ovvero hanno la stessa lunghezza e puoi accedere al loro contenuto utilizzando lo stesso indice, 
  * che ti permetteranno di creare oggetti di tipo pietanza in modo veloce e sicuro.
  * Come puoi vedere gli array sono:
  * tipoPietanza (contiene la tipologia della pietanza: il carattere 'P' significa Primo, la 'S' significa Secondo, la 'B' significa Bibita, la 'C' significa Contorno, la 'D' significa Dessert.

@@ -1,7 +1,7 @@
 BATTAGLIA OCEANICA
 
 La classe NaveMare è definita mediante una Coppia di coordinate e altri campi.
-L'oggetto Coppia identifica solo la casella iniziale; nulla è saputo sulla posizione degli altri pezzi della nave. Si
+L'oggetto Coppia identifica solo la casella iniziale; nulla è saputo sulla posizioneNave degli altri pezzi della nave. Si
 ricorda che in una classe astratta deve essere “messo” tutto ciò che è possibile.
 Devono essere previsti i metodi:
  costruttore: ha come parametri una Coppia di coordinate e il numero di pezzi galleggianti;
@@ -15,6 +15,7 @@ La classe Portaerei, rispetto alla NaveLineare, possiede anche una torretta comp
 posizionata rispetto alla casella iniziale della nave:
  a nord se la nave è in direzione est;
  a est se la nave è in direzione nord.
+
 La classe NaveQuadrata è una NaveMare composta da n pezzi galleggianti disposti a matrice quadrata
 avente la Coppia di origine a SudOvest (n è un quadrato perfetto). Devono essere previsti i metodi:
  fuoco(?), che date le coordinate del colpo, restituisce un esito: acqua, colpito, affondato;

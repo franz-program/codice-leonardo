@@ -3,15 +3,15 @@ package erediterieta2;
 public abstract class NaveMare {
 
     
-    protected Coppia posizione;
+    protected Coppia posizioneNave;
     protected int nPezzi;
 
-    public NaveMare(Coppia posizione, int nPezzi){
+    public NaveMare(Coppia posizioneNave, int nPezzi){
         if(nPezzi <= 0){
             throw new IllegalArgumentException();
         }
         this.nPezzi = nPezzi;
-        this.posizione = posizione;
+        this.posizioneNave = posizioneNave;
     }
 
     public abstract String stato();
